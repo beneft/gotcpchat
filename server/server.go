@@ -125,13 +125,19 @@ func handleCommand(client *Client, message string) {
 				flag = true
 			}
 		}
+		count := 0
+		for _, c := range clients {
+			if c.lobby == lobby {
+				count++
+			}
+		}
 		if !flag {
 			sendServerNotification(client, "Lobby is not found. Try another or create new.")
 			return
 		}
 		client.lobby = lobby
 		log.Printf("%s A client %s has joined the lobby: %s", time.Now().Format("01-02 15:04:05"), client.conn.RemoteAddr(), lobby)
-		sendServerNotification(client, fmt.Sprintf("You have joined the lobby '%s'.", lobby))
+		sendServerNotification(client, fmt.Sprintf("You have joined the lobby '%s' with %d users.", lobby, count))
 		sendServerNotification(client, "Ready to chat.")
 	case "/disconnect":
 		if client.lobby == "" {
@@ -145,7 +151,17 @@ func handleCommand(client *Client, message string) {
 		helpmsg := "/help - to see this message\n/exit - disconnect from the server\n/create - create a new lobby\n/join - join an existing lobby\n/disconnect - leave current lobby\n/list - get the list of existing lobbies"
 		sendServerNotification(client, helpmsg)
 	case "/list":
-		list := fmt.Sprintf("Availbale lobbies: %s", strings.Join(lobbies, ", "))
+		var lobbyusers []string
+		for _, lobby := range lobbies {
+			count := 0
+			for _, c := range clients {
+				if c.lobby == lobby {
+					count++
+				}
+			}
+			lobbyusers = append(lobbyusers, fmt.Sprintf("%s (%d users)", lobby, count))
+		}
+		list := fmt.Sprintf("Available lobbies:\n%s", strings.Join(lobbyusers, ", "))
 		sendServerNotification(client, list)
 	default:
 		log.Printf("%s Unknown command '%s' received from client: %s", time.Now().Format("01-02 15:04:05"), command, client.conn.RemoteAddr())
