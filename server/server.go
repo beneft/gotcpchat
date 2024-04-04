@@ -139,7 +139,17 @@ func handleCommand(client *Client, message string) {
 		log.Printf("%s A client %s has joined the lobby: %s", time.Now().Format("01-02 15:04:05"), client.conn.RemoteAddr(), lobby)
 		sendServerNotification(client, fmt.Sprintf("You have joined the lobby '%s' with %d users.", lobby, count))
 		sendServerNotification(client, "Ready to chat.")
+		mutex.Lock()
+		defer mutex.Unlock()
+		log.Printf("%s Broadcasting...", time.Now().Format("01-02 15:04:05"))
+		for _, c := range clients {
+			if c != client && c.lobby == client.lobby {
+				msg := fmt.Sprintf("Someone has joined the lobby! (Now %d users in here)", count+1)
+				sendServerNotification(c, msg)
+			}
+		}
 	case "/disconnect":
+		lobby := client.lobby
 		if client.lobby == "" {
 			sendServerNotification(client, "You have not joined any lobbies yet.")
 			return
@@ -147,6 +157,21 @@ func handleCommand(client *Client, message string) {
 		client.lobby = ""
 		log.Printf("%s A client %s has left the lobby", time.Now().Format("01-02 15:04:05"), client.conn.RemoteAddr())
 		sendServerNotification(client, "You have disconnected from the lobby.")
+		count := 0
+		for _, c := range clients {
+			if c.lobby == lobby {
+				count++
+			}
+		}
+		mutex.Lock()
+		defer mutex.Unlock()
+		log.Printf("%s Broadcasting...", time.Now().Format("01-02 15:04:05"))
+		for _, c := range clients {
+			if c != client && c.lobby == lobby {
+				msg := fmt.Sprintf("Someone has left the lobby! :( (Now %d users in here)", count)
+				sendServerNotification(c, msg)
+			}
+		}
 	case "/help":
 		helpmsg := "/help - to see this message\n/exit - disconnect from the server\n/create - create a new lobby\n/join - join an existing lobby\n/disconnect - leave current lobby\n/list - get the list of existing lobbies"
 		sendServerNotification(client, helpmsg)

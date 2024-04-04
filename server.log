@@ -110,3 +110,77 @@
 2024/04/04 14:55:12 04-04 14:55:12 Client 127.0.0.1:51094 has left the server.
 2024/04/04 14:55:17 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51094: wsarecv: An existing connection was forcibly closed by the remote host.
 2024/04/04 14:55:17 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51092: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 17:29:39 04-04 17:29:39 Server is starting...
+2024/04/04 17:29:39 04-04 17:29:39 Server is listening to the port 8080 at localhost:8080
+2024/04/04 17:29:46 04-04 17:29:46 A new client has connected: 127.0.0.1:51511
+2024/04/04 17:29:49 04-04 17:29:49 A new client has connected: 127.0.0.1:51513
+2024/04/04 17:29:54 04-04 17:29:54 A message '/list' has been received from: 127.0.0.1:51513
+2024/04/04 17:29:59 04-04 17:29:59 A message '/create test' has been received from: 127.0.0.1:51513
+2024/04/04 17:29:59 04-04 17:29:59 A client 127.0.0.1:51513 has created new lobby: test
+2024/04/04 17:29:59 04-04 17:29:59 A client 127.0.0.1:51513 has joined the lobby: test
+2024/04/04 17:30:01 04-04 17:30:01 A message '/list' has been received from: 127.0.0.1:51513
+2024/04/04 17:30:05 04-04 17:30:05 A message '/disconnect' has been received from: 127.0.0.1:51513
+2024/04/04 17:30:05 04-04 17:30:05 A client 127.0.0.1:51513 has left the lobby
+2024/04/04 17:30:07 04-04 17:30:07 A message '/list' has been received from: 127.0.0.1:51513
+2024/04/04 17:30:13 04-04 17:30:13 A message '/list' has been received from: 127.0.0.1:51511
+2024/04/04 17:30:16 04-04 17:30:16 A message '/join test' has been received from: 127.0.0.1:51511
+2024/04/04 17:30:16 04-04 17:30:16 A client 127.0.0.1:51511 has joined the lobby: test
+2024/04/04 17:30:28 04-04 17:30:28 A message '/join test' has been received from: 127.0.0.1:51513
+2024/04/04 17:30:28 04-04 17:30:28 A client 127.0.0.1:51513 has joined the lobby: test
+2024/04/04 17:30:46 Error decoding message:  EOF
+2024/04/04 17:30:49 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51513: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 17:37:52 04-04 17:37:52 Server is starting...
+2024/04/04 17:37:52 04-04 17:37:52 Server is listening to the port 8080 at localhost:8080
+2024/04/04 17:37:56 04-04 17:37:56 A new client has connected: 127.0.0.1:51552
+2024/04/04 17:37:59 04-04 17:37:59 A new client has connected: 127.0.0.1:51554
+2024/04/04 17:38:04 04-04 17:38:04 A message '/list' has been received from: 127.0.0.1:51554
+2024/04/04 17:38:07 04-04 17:38:07 A message '/create test' has been received from: 127.0.0.1:51554
+2024/04/04 17:38:07 04-04 17:38:07 A client 127.0.0.1:51554 has created new lobby: test
+2024/04/04 17:38:07 04-04 17:38:07 A client 127.0.0.1:51554 has joined the lobby: test
+2024/04/04 17:38:13 04-04 17:38:13 A message '/list' has been received from: 127.0.0.1:51552
+2024/04/04 17:38:21 04-04 17:38:21 A message '/join test' has been received from: 127.0.0.1:51552
+2024/04/04 17:38:21 04-04 17:38:21 A client 127.0.0.1:51552 has joined the lobby: test
+2024/04/04 17:38:21 04-04 17:38:21 Broadcasting...
+2024/04/04 17:38:36 04-04 17:38:36 A message 'frfr' has been received from: 127.0.0.1:51554
+2024/04/04 17:38:36 04-04 17:38:36 Broadcasting...
+2024/04/04 17:38:36 04-04 17:38:36 A message 'frfr' was sent to: 127.0.0.1:51552
+2024/04/04 17:38:47 04-04 17:38:47 A message '/disconnect' has been received from: 127.0.0.1:51554
+2024/04/04 17:38:47 04-04 17:38:47 A client 127.0.0.1:51554 has left the lobby
+2024/04/04 17:38:47 04-04 17:38:47 Broadcasting...
+2024/04/04 17:39:03 04-04 17:39:03 A message '/list' has been received from: 127.0.0.1:51552
+2024/04/04 17:39:10 04-04 17:39:10 A message '/disconnect' has been received from: 127.0.0.1:51552
+2024/04/04 17:39:10 04-04 17:39:10 A client 127.0.0.1:51552 has left the lobby
+2024/04/04 17:39:10 04-04 17:39:10 Broadcasting...
+2024/04/04 17:39:27 04-04 17:39:27 A message '/join test' has been received from: 127.0.0.1:51554
+2024/04/04 17:39:27 04-04 17:39:27 A client 127.0.0.1:51554 has joined the lobby: test
+2024/04/04 17:39:27 04-04 17:39:27 Broadcasting...
+2024/04/04 17:39:34 04-04 17:39:34 A message '/join test' has been received from: 127.0.0.1:51552
+2024/04/04 17:39:34 04-04 17:39:34 A client 127.0.0.1:51552 has joined the lobby: test
+2024/04/04 17:39:34 04-04 17:39:34 Broadcasting...
+2024/04/04 17:39:40 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51552: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 17:39:40 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51554: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 17:40:13 04-04 17:40:13 Server is starting...
+2024/04/04 17:40:13 04-04 17:40:13 Server is listening to the port 8080 at localhost:8080
+2024/04/04 17:40:17 04-04 17:40:17 A new client has connected: 127.0.0.1:51565
+2024/04/04 17:40:21 04-04 17:40:21 A new client has connected: 127.0.0.1:51567
+2024/04/04 17:40:26 04-04 17:40:26 A message '/create test' has been received from: 127.0.0.1:51567
+2024/04/04 17:40:26 04-04 17:40:26 A client 127.0.0.1:51567 has created new lobby: test
+2024/04/04 17:40:26 04-04 17:40:26 A client 127.0.0.1:51567 has joined the lobby: test
+2024/04/04 17:40:32 04-04 17:40:32 A message '/join test' has been received from: 127.0.0.1:51565
+2024/04/04 17:40:32 04-04 17:40:32 A client 127.0.0.1:51565 has joined the lobby: test
+2024/04/04 17:40:32 04-04 17:40:32 Broadcasting...
+2024/04/04 17:40:38 04-04 17:40:38 A message 'rfrf' has been received from: 127.0.0.1:51567
+2024/04/04 17:40:38 04-04 17:40:38 Broadcasting...
+2024/04/04 17:40:38 04-04 17:40:38 A message 'rfrf' was sent to: 127.0.0.1:51565
+2024/04/04 17:40:43 04-04 17:40:43 A message '/disconnect' has been received from: 127.0.0.1:51565
+2024/04/04 17:40:43 04-04 17:40:43 A client 127.0.0.1:51565 has left the lobby
+2024/04/04 17:40:43 04-04 17:40:43 Broadcasting...
+2024/04/04 17:40:49 04-04 17:40:49 A message '/disconnect' has been received from: 127.0.0.1:51567
+2024/04/04 17:40:49 04-04 17:40:49 A client 127.0.0.1:51567 has left the lobby
+2024/04/04 17:40:49 04-04 17:40:49 Broadcasting...
+2024/04/04 17:40:53 04-04 17:40:53 A message '/exit' has been received from: 127.0.0.1:51567
+2024/04/04 17:40:53 04-04 17:40:53 Client 127.0.0.1:51567 has left the server.
+2024/04/04 17:40:57 04-04 17:40:57 A message '/exit' has been received from: 127.0.0.1:51565
+2024/04/04 17:40:57 04-04 17:40:57 Client 127.0.0.1:51565 has left the server.
+2024/04/04 17:41:01 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51565: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 17:41:01 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51567: wsarecv: An existing connection was forcibly closed by the remote host.
