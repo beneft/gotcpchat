@@ -1,0 +1,112 @@
+2024/04/04 13:41:30 04-04 13:41:30 Server is starting...
+2024/04/04 13:41:30 04-04 13:41:30 Server is listening to the port 8080 at localhost:8080
+2024/04/04 13:52:13 04-04 13:52:13 Server is starting...
+2024/04/04 13:52:13 04-04 13:52:13 Server is listening to the port 8080 at localhost:8080
+2024/04/04 13:52:27 04-04 13:52:27 A new client has connected: 127.0.0.1:50978
+2024/04/04 13:52:32 04-04 13:52:32 Server is starting...
+2024/04/04 13:52:32 Server listener initialization error: listen tcp 127.0.0.1:8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2024/04/04 13:52:38 04-04 13:52:38 A new client has connected: 127.0.0.1:50980
+2024/04/04 13:53:12 04-04 13:53:12 A message 'hi' has been received from: 127.0.0.1:50980
+2024/04/04 13:53:12 04-04 13:53:12 Broadcasting...
+2024/04/04 13:53:12 04-04 13:53:12 A message hi was sent to: 127.0.0.1:50978
+2024/04/04 13:54:15 04-04 13:54:15 A message 'kill u s' has been received from: 127.0.0.1:50978
+2024/04/04 13:54:15 04-04 13:54:15 Broadcasting...
+2024/04/04 13:54:15 04-04 13:54:15 A message kill u s was sent to: 127.0.0.1:50980
+2024/04/04 13:54:16 04-04 13:54:16 A message 'ddd' has been received from: 127.0.0.1:50978
+2024/04/04 13:54:16 04-04 13:54:16 Broadcasting...
+2024/04/04 13:54:16 04-04 13:54:16 A message ddd was sent to: 127.0.0.1:50980
+2024/04/04 13:54:23 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:50980: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 14:42:41 04-04 14:42:41 Server is starting...
+2024/04/04 14:42:41 04-04 14:42:41 Server is listening to the port 8080 at localhost:8080
+2024/04/04 14:42:59 04-04 14:42:59 A new client has connected: 127.0.0.1:51065
+2024/04/04 14:43:09 04-04 14:43:09 A new client has connected: 127.0.0.1:51076
+2024/04/04 14:43:15 04-04 14:43:15 A message 'hi' has been received from: 127.0.0.1:51065
+2024/04/04 14:43:21 04-04 14:43:21 A message '/help' has been received from: 127.0.0.1:51065
+2024/04/04 14:43:31 04-04 14:43:31 A message '/disconnect' has been received from: 127.0.0.1:51065
+2024/04/04 14:43:44 04-04 14:43:44 A message '/list' has been received from: 127.0.0.1:51065
+2024/04/04 14:43:59 04-04 14:43:59 A message '/create test' has been received from: 127.0.0.1:51065
+2024/04/04 14:43:59 04-04 14:43:59 Unknown command '/create test' received from client: 127.0.0.1:51065
+2024/04/04 14:44:43 04-04 14:44:43 A message '/create' has been received from: 127.0.0.1:51065
+2024/04/04 14:44:47 04-04 14:44:47 A message '/create test' has been received from: 127.0.0.1:51065
+2024/04/04 14:44:47 04-04 14:44:47 Unknown command '/create test' received from client: 127.0.0.1:51065
+2024/04/04 14:44:51 04-04 14:44:51 A message '/join test' has been received from: 127.0.0.1:51065
+2024/04/04 14:44:51 04-04 14:44:51 Unknown command '/join test' received from client: 127.0.0.1:51065
+2024/04/04 14:48:11 04-04 14:48:11 Server is starting...
+2024/04/04 14:48:11 04-04 14:48:11 Server is listening to the port 8080 at localhost:8080
+2024/04/04 14:48:15 04-04 14:48:15 A new client has connected: 127.0.0.1:51083
+2024/04/04 14:48:18 04-04 14:48:18 A new client has connected: 127.0.0.1:51085
+2024/04/04 14:48:26 04-04 14:48:26 A message '/create test' has been received from: 127.0.0.1:51085
+2024/04/04 14:48:26 04-04 14:48:26 A client 127.0.0.1:51085 has created new lobby: test
+2024/04/04 14:48:26 04-04 14:48:26 A client 127.0.0.1:51085 has joined the lobby: test
+2024/04/04 14:48:30 04-04 14:48:30 A message '/list' has been received from: 127.0.0.1:51085
+2024/04/04 14:48:40 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51085: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 14:48:41 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51083: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 14:49:27 04-04 14:49:27 Server is starting...
+2024/04/04 14:49:27 04-04 14:49:27 Server is listening to the port 8080 at localhost:8080
+2024/04/04 14:49:31 04-04 14:49:31 A new client has connected: 127.0.0.1:51087
+2024/04/04 14:49:34 04-04 14:49:34 A new client has connected: 127.0.0.1:51089
+2024/04/04 14:49:37 04-04 14:49:37 A message '/create test' has been received from: 127.0.0.1:51089
+2024/04/04 14:49:37 04-04 14:49:37 A client 127.0.0.1:51089 has created new lobby: test
+2024/04/04 14:49:37 04-04 14:49:37 A client 127.0.0.1:51089 has joined the lobby: test
+2024/04/04 14:49:41 04-04 14:49:41 A message '/list' has been received from: 127.0.0.1:51089
+2024/04/04 14:49:49 04-04 14:49:49 A message '/disconnect' has been received from: 127.0.0.1:51089
+2024/04/04 14:49:49 04-04 14:49:49 A client 127.0.0.1:51089 has left the lobby
+2024/04/04 14:49:53 04-04 14:49:53 A message '/join test' has been received from: 127.0.0.1:51089
+2024/04/04 14:49:57 04-04 14:49:57 A message '/list' has been received from: 127.0.0.1:51089
+2024/04/04 14:50:01 04-04 14:50:01 A message '/join test' has been received from: 127.0.0.1:51089
+2024/04/04 14:52:13 04-04 14:52:13 Server is starting...
+2024/04/04 14:52:13 04-04 14:52:13 Server is listening to the port 8080 at localhost:8080
+2024/04/04 14:52:16 04-04 14:52:16 A new client has connected: 127.0.0.1:51092
+2024/04/04 14:52:19 04-04 14:52:19 A new client has connected: 127.0.0.1:51094
+2024/04/04 14:52:22 04-04 14:52:22 A message '/create test' has been received from: 127.0.0.1:51094
+2024/04/04 14:52:22 04-04 14:52:22 A client 127.0.0.1:51094 has created new lobby: test
+2024/04/04 14:52:22 04-04 14:52:22 A client 127.0.0.1:51094 has joined the lobby: test
+2024/04/04 14:52:25 04-04 14:52:25 A message '/list' has been received from: 127.0.0.1:51094
+2024/04/04 14:52:28 04-04 14:52:28 A message '/disconnect' has been received from: 127.0.0.1:51094
+2024/04/04 14:52:28 04-04 14:52:28 A client 127.0.0.1:51094 has left the lobby
+2024/04/04 14:52:31 04-04 14:52:31 A message '/join test' has been received from: 127.0.0.1:51094
+2024/04/04 14:52:31 04-04 14:52:31 A client 127.0.0.1:51094 has joined the lobby: test
+2024/04/04 14:52:39 04-04 14:52:39 A message 'hi' has been received from: 127.0.0.1:51094
+2024/04/04 14:52:39 04-04 14:52:39 Broadcasting...
+2024/04/04 14:52:48 04-04 14:52:48 A message '/list' has been received from: 127.0.0.1:51092
+2024/04/04 14:52:52 04-04 14:52:52 A message 'gi' has been received from: 127.0.0.1:51092
+2024/04/04 14:52:56 04-04 14:52:56 A message '/create new' has been received from: 127.0.0.1:51092
+2024/04/04 14:52:56 04-04 14:52:56 A client 127.0.0.1:51092 has created new lobby: new
+2024/04/04 14:52:56 04-04 14:52:56 A client 127.0.0.1:51092 has joined the lobby: new
+2024/04/04 14:53:05 04-04 14:53:05 A message 'hi' has been received from: 127.0.0.1:51092
+2024/04/04 14:53:05 04-04 14:53:05 Broadcasting...
+2024/04/04 14:53:13 04-04 14:53:13 A message '/disconnect' has been received from: 127.0.0.1:51092
+2024/04/04 14:53:13 04-04 14:53:13 A client 127.0.0.1:51092 has left the lobby
+2024/04/04 14:53:16 04-04 14:53:16 A message '/join test' has been received from: 127.0.0.1:51092
+2024/04/04 14:53:16 04-04 14:53:16 A client 127.0.0.1:51092 has joined the lobby: test
+2024/04/04 14:53:22 04-04 14:53:22 A message '/list' has been received from: 127.0.0.1:51092
+2024/04/04 14:53:30 04-04 14:53:30 A message 'try me' has been received from: 127.0.0.1:51092
+2024/04/04 14:53:30 04-04 14:53:30 Broadcasting...
+2024/04/04 14:53:30 04-04 14:53:30 A message 'try me' was sent to: 127.0.0.1:51094
+2024/04/04 14:53:37 04-04 14:53:37 A message 'no me' has been received from: 127.0.0.1:51094
+2024/04/04 14:53:37 04-04 14:53:37 Broadcasting...
+2024/04/04 14:53:37 04-04 14:53:37 A message 'no me' was sent to: 127.0.0.1:51092
+2024/04/04 14:53:45 04-04 14:53:45 A message 'hooray' has been received from: 127.0.0.1:51094
+2024/04/04 14:53:45 04-04 14:53:45 Broadcasting...
+2024/04/04 14:53:45 04-04 14:53:45 A message 'hooray' was sent to: 127.0.0.1:51092
+2024/04/04 14:54:09 04-04 14:54:09 A message '/disconnect' has been received from: 127.0.0.1:51092
+2024/04/04 14:54:09 04-04 14:54:09 A client 127.0.0.1:51092 has left the lobby
+2024/04/04 14:54:09 04-04 14:54:09 A message 'gt' has been received from: 127.0.0.1:51092
+2024/04/04 14:54:14 04-04 14:54:14 A message 'gtg' has been received from: 127.0.0.1:51094
+2024/04/04 14:54:14 04-04 14:54:14 Broadcasting...
+2024/04/04 14:54:21 04-04 14:54:21 A message '/join r' has been received from: 127.0.0.1:51094
+2024/04/04 14:54:25 04-04 14:54:25 A message '/join new' has been received from: 127.0.0.1:51094
+2024/04/04 14:54:25 04-04 14:54:25 A client 127.0.0.1:51094 has joined the lobby: new
+2024/04/04 14:54:50 04-04 14:54:50 A message '/join new' has been received from: 127.0.0.1:51092
+2024/04/04 14:54:50 04-04 14:54:50 A client 127.0.0.1:51092 has joined the lobby: new
+2024/04/04 14:54:52 04-04 14:54:52 A message 'ee' has been received from: 127.0.0.1:51092
+2024/04/04 14:54:52 04-04 14:54:52 Broadcasting...
+2024/04/04 14:54:52 04-04 14:54:52 A message 'ee' was sent to: 127.0.0.1:51094
+2024/04/04 14:55:02 04-04 14:55:02 A message '/exit' has been received from: 127.0.0.1:51092
+2024/04/04 14:55:02 04-04 14:55:02 Client 127.0.0.1:51092 has left the server.
+2024/04/04 14:55:08 04-04 14:55:08 A message 'def' has been received from: 127.0.0.1:51094
+2024/04/04 14:55:08 04-04 14:55:08 Broadcasting...
+2024/04/04 14:55:12 04-04 14:55:12 A message '/exit' has been received from: 127.0.0.1:51094
+2024/04/04 14:55:12 04-04 14:55:12 Client 127.0.0.1:51094 has left the server.
+2024/04/04 14:55:17 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51094: wsarecv: An existing connection was forcibly closed by the remote host.
+2024/04/04 14:55:17 Error decoding message:  read tcp 127.0.0.1:8080->127.0.0.1:51092: wsarecv: An existing connection was forcibly closed by the remote host.
